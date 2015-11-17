@@ -9,3 +9,12 @@ find / -type d -iname 'file-or-dir-name'
 - `-iname` ignores case, `-name` doesn't
 - `/` indicates dir to search in, in this case we're searching from root
 - `file-or-dir-name` can mix regexes like `*.php` 
+
+### Zipping a dir or file
+```
+zip zippedfilename.zip file1 file2
+zip file.zip dir1
+zip -r file.zip /path/to/your/dir/
+zip -r file.zip "*.java"
+```
+ 
