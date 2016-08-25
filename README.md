@@ -20,5 +20,5 @@ zip -r file.zip "*.java"
 
 ### grepping for a string and returning the number of lines it is used (useful for checking logs)
 ```
-grep -ir '<your-string>' --exclude=*svn* | awk '{ print } END { print NR }'
+grep -icr '<your-string>' --exclude=*svn*
 ```
