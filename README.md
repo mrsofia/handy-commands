@@ -1,5 +1,10 @@
 # Handy terminal commands for OS X/Linux
 
+### List callable methods on an object in Python
+replace 'object' with the object you're interested in:-
+
+```[method_name for method_name in dir(object) if callable(getattr(object, method_name))]```
+
 ### Searching for a dir or file
 ```markdown
 find / -type d -iname 'file-or-dir-name'
